@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/TH_TKMTHS/GCD/sqrt/sqrt.sim/sim_1/synth/timing/xsim/SQRTApprox_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-311] analyzing module Regn
+INFO: [VRFC 10-311] analyzing module Regn_0
+INFO: [VRFC 10-311] analyzing module Regn_2
+INFO: [VRFC 10-311] analyzing module Regn_3
+INFO: [VRFC 10-311] analyzing module Regn_4
+INFO: [VRFC 10-311] analyzing module Regn__parameterized0
+INFO: [VRFC 10-311] analyzing module Regn__parameterized0_1
+INFO: [VRFC 10-311] analyzing module Regn__parameterized1
+INFO: [VRFC 10-311] analyzing module SQRTApprox
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Admin/Desktop/TH_TKMTHS/GCD/sqrt/sqrt.srcs/sources_1/imports/SQRT/SQRTApprox_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SQRTApprox_tb'
+ERROR: [VRFC 10-719] formal port/generic <data_width> is not declared in <\SQRTApprox\> [C:/Users/Admin/Desktop/TH_TKMTHS/GCD/sqrt/sqrt.srcs/sources_1/imports/SQRT/SQRTApprox_tb.vhd:27]
+ERROR: [VRFC 10-3782] unit 'bev' ignored due to previous errors [C:/Users/Admin/Desktop/TH_TKMTHS/GCD/sqrt/sqrt.srcs/sources_1/imports/SQRT/SQRTApprox_tb.vhd:8]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/Admin/Desktop/TH_TKMTHS/GCD/sqrt/sqrt.srcs/sources_1/imports/SQRT/SQRTApprox_tb.vhd' ignored due to errors

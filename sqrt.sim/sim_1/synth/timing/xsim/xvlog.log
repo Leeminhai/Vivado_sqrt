@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/TH_TKMTHS/GCD/sqrt/sqrt.sim/sim_1/synth/timing/xsim/SQRTApprox_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-311] analyzing module Regn
+INFO: [VRFC 10-311] analyzing module Regn_0
+INFO: [VRFC 10-311] analyzing module Regn_2
+INFO: [VRFC 10-311] analyzing module Regn_3
+INFO: [VRFC 10-311] analyzing module Regn_4
+INFO: [VRFC 10-311] analyzing module Regn__parameterized0
+INFO: [VRFC 10-311] analyzing module Regn__parameterized0_1
+INFO: [VRFC 10-311] analyzing module Regn__parameterized1
+INFO: [VRFC 10-311] analyzing module SQRTApprox
+INFO: [VRFC 10-311] analyzing module glbl

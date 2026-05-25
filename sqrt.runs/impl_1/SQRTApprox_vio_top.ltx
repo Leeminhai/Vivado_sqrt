@@ -1,0 +1,400 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "50000000"
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "vio_inst",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "10B6415846A85B7596E07529A8F6E526",
+                        "pins": [
+                            {
+                                "name": "probe_in0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "SQRT_s",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "SQRT_s[31]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[30]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[29]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[28]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[27]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[26]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[25]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[24]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[23]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[22]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[21]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[20]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[19]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[18]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[17]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[16]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[15]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[14]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[13]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[12]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[11]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[10]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[9]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[8]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[7]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[6]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[5]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[4]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[3]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[2]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[1]"
+                                            },
+                                            {
+                                                "name": "SQRT_s[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in1",
+                                "id": 1,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "Done_s",
+                                        "isBus": false,
+                                        "parentNetId": 32
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in2",
+                                "id": 2,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "Error_s",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out0",
+                                "id": 3,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "Reset_vio",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 4,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "Start_s",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out2",
+                                "id": 5,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "A_s",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "A_s[31]"
+                                            },
+                                            {
+                                                "name": "A_s[30]"
+                                            },
+                                            {
+                                                "name": "A_s[29]"
+                                            },
+                                            {
+                                                "name": "A_s[28]"
+                                            },
+                                            {
+                                                "name": "A_s[27]"
+                                            },
+                                            {
+                                                "name": "A_s[26]"
+                                            },
+                                            {
+                                                "name": "A_s[25]"
+                                            },
+                                            {
+                                                "name": "A_s[24]"
+                                            },
+                                            {
+                                                "name": "A_s[23]"
+                                            },
+                                            {
+                                                "name": "A_s[22]"
+                                            },
+                                            {
+                                                "name": "A_s[21]"
+                                            },
+                                            {
+                                                "name": "A_s[20]"
+                                            },
+                                            {
+                                                "name": "A_s[19]"
+                                            },
+                                            {
+                                                "name": "A_s[18]"
+                                            },
+                                            {
+                                                "name": "A_s[17]"
+                                            },
+                                            {
+                                                "name": "A_s[16]"
+                                            },
+                                            {
+                                                "name": "A_s[15]"
+                                            },
+                                            {
+                                                "name": "A_s[14]"
+                                            },
+                                            {
+                                                "name": "A_s[13]"
+                                            },
+                                            {
+                                                "name": "A_s[12]"
+                                            },
+                                            {
+                                                "name": "A_s[11]"
+                                            },
+                                            {
+                                                "name": "A_s[10]"
+                                            },
+                                            {
+                                                "name": "A_s[9]"
+                                            },
+                                            {
+                                                "name": "A_s[8]"
+                                            },
+                                            {
+                                                "name": "A_s[7]"
+                                            },
+                                            {
+                                                "name": "A_s[6]"
+                                            },
+                                            {
+                                                "name": "A_s[5]"
+                                            },
+                                            {
+                                                "name": "A_s[4]"
+                                            },
+                                            {
+                                                "name": "A_s[3]"
+                                            },
+                                            {
+                                                "name": "A_s[2]"
+                                            },
+                                            {
+                                                "name": "A_s[1]"
+                                            },
+                                            {
+                                                "name": "A_s[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 32,
+                        "name": "sqrt_core/Ctrl_Unit/Q[6]",
+                        "state_reg": [
+                            {
+                                "name": "sqrt_core/Ctrl_Unit/FSM_onehot_state_reg[11]",
+                                "states": [
+                                    {
+                                        "name": "s3",
+                                        "val": "000000000001000"
+                                    },
+                                    {
+                                        "name": "s4",
+                                        "val": "000000000010000"
+                                    },
+                                    {
+                                        "name": "s2",
+                                        "val": "000000000000100"
+                                    },
+                                    {
+                                        "name": "s13",
+                                        "val": "000100000000000"
+                                    },
+                                    {
+                                        "name": "s12",
+                                        "val": "000010000000000"
+                                    },
+                                    {
+                                        "name": "s11",
+                                        "val": "000001000000000"
+                                    },
+                                    {
+                                        "name": "s10",
+                                        "val": "100000000000000"
+                                    },
+                                    {
+                                        "name": "s1",
+                                        "val": "000000000000010"
+                                    },
+                                    {
+                                        "name": "s0",
+                                        "val": "000000000000001"
+                                    },
+                                    {
+                                        "name": "s7",
+                                        "val": "000000010000000"
+                                    },
+                                    {
+                                        "name": "s9",
+                                        "val": "010000000000000"
+                                    },
+                                    {
+                                        "name": "s8",
+                                        "val": "000000100000000"
+                                    },
+                                    {
+                                        "name": "s6",
+                                        "val": "000000001000000"
+                                    },
+                                    {
+                                        "name": "s14",
+                                        "val": "001000000000000"
+                                    },
+                                    {
+                                        "name": "s5",
+                                        "val": "000000000100000"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
