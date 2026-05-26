@@ -4,32 +4,32 @@ USE ieee.numeric_std.all;
 
 ENTITY Datapath IS
     GENERIC (
-        DATA_WIDTH : INTEGER := 32;
-        FRAC_WIDTH : INTEGER := 16;
-        ITER_MAX   : INTEGER := 32
+        DATA_WIDTH : INTEGER := 32; -- dữ liệu 32 bit
+        FRAC_WIDTH : INTEGER := 16; -- 16 bit phần thập phân của Q16.16
+        ITER_MAX   : INTEGER := 32  -- số vòng lặp CORDIC
     );
     PORT (
         Reset, CLK : IN STD_LOGIC;
 
         A_i : IN STD_LOGIC_VECTOR(DATA_WIDTH - 1 DOWNTO 0);
-
-        Load_A        : IN STD_LOGIC;
-        Set_Error     : IN STD_LOGIC;
-        Set_Zero      : IN STD_LOGIC;
-        Norm_Low      : IN STD_LOGIC;
-        Norm_High     : IN STD_LOGIC;
-        Init_XY       : IN STD_LOGIC;
-        Iter_Add      : IN STD_LOGIC;
-        Iter_Sub      : IN STD_LOGIC;
-        Gain_Correct  : IN STD_LOGIC;
-        Scale_Correct : IN STD_LOGIC;
-
-        A_Neg     : OUT STD_LOGIC;
-        A_Zero    : OUT STD_LOGIC;
-        A_Lt_Half : OUT STD_LOGIC;
-        A_Ge_Two  : OUT STD_LOGIC;
-        Y_Neg     : OUT STD_LOGIC;
-        Iter_Done : OUT STD_LOGIC;
+-- nhóm tín hiệu điều khiển từ Controller sang Datapath:
+        Load_A        : IN STD_LOGIC; -- nạp A_i vào A_reg
+        Set_Error     : IN STD_LOGIC; -- báo lỗi đầu vào âm
+        Set_Zero      : IN STD_LOGIC; -- báo lỗi đầu vào âm
+        Norm_Low      : IN STD_LOGIC; -- chuẩn hóa khi A < 0.5
+        Norm_High     : IN STD_LOGIC; -- chuẩn hóa khi A >= 2
+        Init_XY       : IN STD_LOGIC; -- khởi tạo X, Y, i
+        Iter_Add      : IN STD_LOGIC; -- vòng lặp khi Y < 0
+        Iter_Sub      : IN STD_LOGIC; -- vòng lặp khi Y >= 0
+        Gain_Correct  : IN STD_LOGIC; -- hiệu chỉnh gain
+        Scale_Correct : IN STD_LOGIC; -- bù scale
+nhóm tín hiệu trạng thái từ Datapath gửi về Controller:
+        A_Neg     : OUT STD_LOGIC; -- A < 0
+        A_Zero    : OUT STD_LOGIC; -- A = 0
+        A_Lt_Half : OUT STD_LOGIC; -- A < 0.5
+        A_Ge_Two  : OUT STD_LOGIC; -- A >= 2
+        Y_Neg     : OUT STD_LOGIC; -- Y < 0
+        Iter_Done : OUT STD_LOGIC; -- đủ số vòng lặp
 
         Error_o : OUT STD_LOGIC;
         SQRT_o  : OUT STD_LOGIC_VECTOR(DATA_WIDTH - 1 DOWNTO 0)
