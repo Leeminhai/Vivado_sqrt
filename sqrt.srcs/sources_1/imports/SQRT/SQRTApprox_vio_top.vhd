@@ -1,9 +1,9 @@
 --------------------------------------------------------------------
---   - Nhan clock vi sai 200 MHz tu board AC701
---   - Dung IBUFDS de doi clock vi sai sang clock single-ended
---   - Dung clk_wiz_0 de tao clock 50 MHz
---   - Dung vio_0 de nhap Reset, Start_i, A_i qua JTAG
---   - Dua SQRT_o, Done_o, Error_o ve VIO de quan sat tren Hardware Manager
+--  Nhan clock vi sai 200 MHz tu board AC701
+--  Dung IBUFDS de doi clock vi sai sang clock single-ended
+--  Dung clk_wiz_0 de tao clock 50 MHz
+--  Dung vio_0 de nhap Reset, Start_i, A_i qua JTAG
+--  Dua SQRT_o, Done_o, Error_o ve VIO de quan sat tren Hardware Manager
 --------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
